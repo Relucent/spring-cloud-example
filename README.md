@@ -9,4 +9,4 @@ Spring Cloud是一系列框架的有序集合。
 
 Spring Cloud包含了多个子项目（针对分布式系统中涉及的多个不同开源产品），比如：Spring Cloud Config、Spring Cloud Netflix、Spring Cloud CloudFoundry、Spring Cloud AWS、Spring Cloud Security、Spring Cloud Commons、Spring Cloud Zookeeper、Spring Cloud CLI等项目。  
 
-![Alt text](/springcloud.svg)
+![Alt text](/__/svg/springcloud.svg)
