@@ -3,11 +3,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>yyl</groupId>
-	<artifactId>yyl_spring_cloud</artifactId>
+	<artifactId>spring-cloud-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>yyl_spring_cloud</name>
+	<name>spring-cloud-example</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,8 +15,8 @@
 	</properties>
 
 	<modules>
-		<module>yyl_spring_cloud_eureka_server</module>
-		<module>yyl_spring_cloud_eureka_client</module>
+		<module>spring-cloud-example_eureka_server</module>
+		<module>spring-cloud-example_eureka_client</module>
 	</modules>
 
 	<parent>
