@@ -2,19 +2,21 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>yyl</groupId>
-		<artifactId>yyl_spring_cloud</artifactId>
+		<artifactId>spring-cloud-example</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>yyl_spring_cloud_eureka_server</artifactId>
+	<artifactId>spring-cloud-example-eureka-client</artifactId>
 
 	<dependencies>
-		<!--eureka server -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- spring boot test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -30,6 +32,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>
