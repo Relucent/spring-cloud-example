@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RetryRule;
+
 @Configuration
 public class BeanConfiguration {
 
@@ -13,4 +16,12 @@ public class BeanConfiguration {
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
+
+	// 负载均衡策略
+	@Bean
+	public IRule ribbonRule() {
+		// return new RoundRobinRule();//轮询
+		return new RetryRule();// 轮询 + 重试机制
+	}
+
 }
