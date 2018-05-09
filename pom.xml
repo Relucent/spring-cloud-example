@@ -7,11 +7,10 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
 		<lombok.version>1.16.20</lombok.version>
+		<project.version>0.0.1-SNAPSHOT</project.version>
 	</properties>
 
 	<parent>
@@ -32,4 +31,7 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<modules>
+		<module>spring-cloud-example-provider</module>
+	</modules>
 </project>
