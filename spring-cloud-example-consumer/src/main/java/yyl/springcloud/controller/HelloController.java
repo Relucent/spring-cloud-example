@@ -11,7 +11,8 @@ import yyl.springcloud.entity.Hello;
 @RestController
 public class HelloController {
 
-	private String REST_URL_PREFIX = "http://localhost:8001";
+	// private String REST_URL_PREFIX = "http://localhost:8001"; //#直连服务提供者
+	private String REST_URL_PREFIX = "http://HELLO-PROVIDER"; // 按照微服务名称访问
 
 	@Autowired
 	private RestTemplate restTemplate;
