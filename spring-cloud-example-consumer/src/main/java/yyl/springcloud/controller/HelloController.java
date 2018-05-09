@@ -1,22 +1,25 @@
 package yyl.springcloud.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import yyl.springcloud.entity.Hello;
-import yyl.springcloud.service.HelloService;
 
 @RestController
 public class HelloController {
 
+	private String REST_URL_PREFIX = "http://localhost:8001";
+
 	@Autowired
-	private HelloService helloService;
+	private RestTemplate restTemplate;
 
 	@GetMapping("/hello")
 	public Object hello() {
-		Hello hello = helloService.getDefault();
-		return hello;
+		ResponseEntity<Hello> response = restTemplate.getForEntity(REST_URL_PREFIX + "/hello", Hello.class);
+		return response.getBody();
 	}
 
 }

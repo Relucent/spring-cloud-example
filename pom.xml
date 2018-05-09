@@ -33,5 +33,6 @@
 
 	<modules>
 		<module>spring-cloud-example-provider</module>
+		<module>spring-cloud-example-consumer</module>
 	</modules>
 </project>
