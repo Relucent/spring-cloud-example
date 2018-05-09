@@ -21,6 +21,8 @@
 
 	<dependencyManagement>
 		<dependencies>
+
+			<!-- _spring_cloud -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -28,11 +30,43 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
+			<!-- _example_model -->
+			<dependency>
+				<groupId>yyl</groupId>
+				<artifactId>spring-cloud-example-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
 	<modules>
+		<module>spring-cloud-example-common</module>
 		<module>spring-cloud-example-provider</module>
 		<module>spring-cloud-example-consumer</module>
+		<module>spring-cloud-example-eureka-7001</module>
+		<module>spring-cloud-example-provider-8001</module>
 	</modules>
+
+	<build>
+		<finalName>spring-cloud-example</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<delimiters>
+						<delimit>$</delimit>
+					</delimiters>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
