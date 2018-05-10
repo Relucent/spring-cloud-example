@@ -8,6 +8,7 @@ public class Hello implements Serializable {
 	private Long id;
 	private String name;
 	private String value;
+	private String source;
 
 	public Long getId() {
 		return id;
@@ -31,5 +32,13 @@ public class Hello implements Serializable {
 
 	public void setValue(String value) {
 		this.value = value;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
 	}
 }

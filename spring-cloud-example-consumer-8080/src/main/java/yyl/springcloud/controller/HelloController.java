@@ -17,6 +17,7 @@ public class HelloController {
 	@Autowired
 	private RestTemplate restTemplate;
 
+	// ~ http://localhost:8080/hello
 	@GetMapping("/hello")
 	public Object hello() {
 		ResponseEntity<Hello> response = restTemplate.getForEntity(REST_URL_PREFIX + "/hello", Hello.class);
