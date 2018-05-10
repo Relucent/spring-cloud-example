@@ -20,3 +20,5 @@ hosts 文件位置
 	127.0.0.1 eureka7001.yyl
 	127.0.0.1 eureka7002.yyl
 	127.0.0.1 eureka7003.yyl
+
+	127.0.0.1 zull9000.yyl

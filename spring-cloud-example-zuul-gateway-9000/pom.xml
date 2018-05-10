@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>spring-cloud-example-zuul-gateway-9000</artifactId>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>yyl</groupId>
+		<artifactId>spring-cloud-example</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+
+		<!-- _boot_web -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jetty</artifactId>
+		</dependency>
+
+		<!-- _actuator | 监控信息 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<!-- _zuul | 路由网关 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zuul</artifactId>
+		</dependency>
+
+		<!-- _eureka | 注册中心 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+
+		<!-- _config -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+
+		<!-- _hystrix | 断路器 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
+		</dependency>
+
+		<!-- _example_common -->
+		<dependency>
+			<groupId>yyl</groupId>
+			<artifactId>spring-cloud-example-common</artifactId>
+		</dependency>
+
+
+		<!-- _springloaded|热部署 -->
+		<!--[ <dependency>] -->
+		<!--[ <groupId>org.springframework</groupId>] -->
+		<!--[ <artifactId>springloaded</artifactId>] -->
+		<!--[ </dependency>] -->
+		<!--[ <dependency>] -->
+		<!--[ <groupId>org.springframework.boot</groupId>] -->
+		<!--[ <artifactId>spring-boot-devtools</artifactId>] -->
+		<!--[ </dependency>] -->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

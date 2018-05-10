@@ -43,13 +43,16 @@
 
 	<modules>
 		<module>spring-cloud-example-common</module>
-		<module>spring-cloud-example-provider</module>
 		<module>spring-cloud-example-consumer-8080</module>
 		<module>spring-cloud-example-consumer-feign-8081</module>
 		<module>spring-cloud-example-eureka-7001</module>
 		<module>spring-cloud-example-eureka-7002</module>
 		<module>spring-cloud-example-eureka-7003</module>
+		<module>spring-cloud-example-hystrix-dashboard-9001</module>
 		<module>spring-cloud-example-provider-8001</module>
+		<module>spring-cloud-example-provider-8002</module>
+		<module>spring-cloud-example-provider-hystrix-8003</module>
+		<module>spring-cloud-example-zuul-gateway-9000</module>
 	</modules>
 
 	<build>
