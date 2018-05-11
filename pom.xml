@@ -53,6 +53,8 @@
 		<module>spring-cloud-example-provider-8002</module>
 		<module>spring-cloud-example-provider-hystrix-8003</module>
 		<module>spring-cloud-example-zuul-gateway-9000</module>
+		<module>spring-cloud-example-config-server</module>
+		<module>spring-cloud-example-config-client-8082</module>
 	</modules>
 
 	<build>

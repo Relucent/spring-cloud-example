@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>spring-cloud-example-config-server-9002</artifactId>
+	<packaging>war</packaging>
+
+	<parent>
+		<groupId>yyl</groupId>
+		<artifactId>spring-cloud-example</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+
+		<!-- _boot_web -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- _config_server | 配置服务 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
+		</dependency>
+
+		<!-- _eureka 註冊中心 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+
+		<!-- _hystrix 断路器 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
+		</dependency>
+
+
+		<!-- _actuator 监控信息 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<!--[_jgit] -->
+		<!--[ <dependency>] -->
+		<!--[ <groupId>org.eclipse.jgit</groupId>] -->
+		<!--[ <artifactId>org.eclipse.jgit</artifactId>] -->
+		<!--[ </dependency>] -->
+
+		<!-- _springloaded|热部署 -->
+		<!--[ <dependency>] -->
+		<!--[ <groupId>org.springframework</groupId>] -->
+		<!--[ <artifactId>springloaded</artifactId>] -->
+		<!--[ </dependency>] -->
+		<!--[ <dependency>] -->
+		<!--[ <groupId>org.springframework.boot</groupId>] -->
+		<!--[ <artifactId>spring-boot-devtools</artifactId>] -->
+		<!--[ </dependency>] -->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
