@@ -8,7 +8,7 @@ spring:
 server: 
   port: 8180
 spring:
-  profiles: test
+  profiles: dev
   application: 
     name: service-test-config
 
@@ -16,6 +16,6 @@ spring:
 server: 
   port: 8280
 spring:
-  profiles: dev
+  profiles: test
   application: 
     name: service-dev-config

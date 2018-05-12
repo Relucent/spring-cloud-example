@@ -55,6 +55,7 @@
 		<module>spring-cloud-example-zuul-gateway-9000</module>
 		<module>spring-cloud-example-config-server</module>
 		<module>spring-cloud-example-config-client-8082</module>
+		<module>spring-cloud-example-config-eureka-7001</module>
 	</modules>
 
 	<build>

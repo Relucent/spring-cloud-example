@@ -1,0 +1,53 @@
+spring:
+  profiles: 
+    active: 
+    - dev
+
+---
+
+# 服务端口
+server: 
+  port: 7001
+
+spring:
+  profiles: dev
+  application: 
+    # 应用名称
+    name: spring-cloud-eureka
+
+#注册中心
+eureka: 
+  instance:
+    hostname: eureka7001.yyl
+  client: 
+    # 不向注册中心注册自己
+    register-with-eureka: false 
+    # 不去检索服务(因为本身就是注册中心)
+    fetch-registry: false 
+    # 对外 eureka 地址
+    service-url: 
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+---
+
+# 服务端口
+server: 
+  port: 7002
+
+spring:
+  profiles: test
+  application: 
+    # 应用名称
+    name: spring-cloud-eureka 
+
+#注册中心
+eureka: 
+  instance:
+    hostname: eureka7002.yyl
+  client: 
+    # 不向注册中心注册自己
+    register-with-eureka: false 
+    # 不去检索服务(因为本身就是注册中心)
+    fetch-registry: false 
+    # 对外 eureka 地址
+    service-url: 
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
