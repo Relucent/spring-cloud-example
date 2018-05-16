@@ -57,6 +57,7 @@
 		<module>spring-cloud-example-config-client-8082</module>
 		<module>spring-cloud-example-config-eureka-7001</module>
 		<module>spring-cloud-example-turbine-9003</module>
+		<module>spring-cloud-example-provider-upload-8004</module>
 	</modules>
 
 	<build>
